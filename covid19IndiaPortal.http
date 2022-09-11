@@ -1,0 +1,56 @@
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+    "username": "christopher_phillips",
+    "password": "christy@123"
+}
+
+####
+GET http://localhost:3000/states/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjYyODI3MzkyfQ.coknGtkZzf9KI7q15w2dATpfAjEjmUQCBMxVxm5pTUI
+
+####
+GET http://localhost:3000/states/5/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjYyODI3MzkyfQ.coknGtkZzf9KI7q15w2dATpfAjEjmUQCBMxVxm5pTUI
+
+####
+POST http://localhost:3000/districts/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjYyODI3MzkyfQ.coknGtkZzf9KI7q15w2dATpfAjEjmUQCBMxVxm5pTUI
+
+{
+    "districtName": "Vizag",
+    "stateId": 5,
+    "cases": 2323,
+    "cured": 2005,
+    "active": 1850,
+    "deaths": 8
+}
+
+####
+GET http://localhost:3000/districts/157/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjYyODI3MzkyfQ.coknGtkZzf9KI7q15w2dATpfAjEjmUQCBMxVxm5pTUI
+
+
+####
+DELETE http://localhost:3000/districts/772/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjYyODI3MzkyfQ.coknGtkZzf9KI7q15w2dATpfAjEjmUQCBMxVxm5pTUI
+
+####
+PUT http://localhost:3000/districts/772
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjYyODI3MzkyfQ.coknGtkZzf9KI7q15w2dATpfAjEjmUQCBMxVxm5pTUI
+
+{
+    "districtName": "Nadia",
+    "stateId": 3,
+    "cases": 9628,
+    "cured": 6524,
+    "active": 3000,
+    "deaths": 104
+}
+
+####
+GET http://localhost:3000/states/4/stats/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjYyODI3MzkyfQ.coknGtkZzf9KI7q15w2dATpfAjEjmUQCBMxVxm5pTUI
